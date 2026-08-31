@@ -1,7 +1,7 @@
 name: refresh-notams
 on:
   schedule:
-    - cron: '17 */3 * * *'   # every 3 hours
+    - cron: '*/30 * * * *'   # every 30 minutes (public repo - free minutes; NOTAMs can change any time)
   workflow_dispatch: {}
 permissions:
   contents: write
